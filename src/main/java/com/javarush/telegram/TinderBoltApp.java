@@ -12,11 +12,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import java.util.ArrayList;
 
 public class TinderBoltApp extends MultiSessionTelegramBot {
-    public static final String TELEGRAM_BOT_NAME = "tinder_wizand_bot"; //TODO: добавь имя бота в кавычках
-    public static final String TELEGRAM_BOT_TOKEN = "8045363203:AAEcObUFja5VHBljZt_rhojbP-vDbd9KS0U"; //TODO: добавь токен бота в кавычках
-    //    public static final String OPEN_AI_TOKEN = "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"; //TODO: добавь токен ChatGPT в кавычках
-//    public static final String OPEN_AI_TOKEN = "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"; //TODO: добавь токен ChatGPT в кавычках
-    public static final String OPEN_AI_TOKEN = "gpt:6MZuruLWYMt7BFAYy33hJFkblB3TrOQSkF7WUgsEFs26dToB"; //TODO: добавь токен ChatGPT в кавычках
+
 
     private ChatGPTService chatGPT = new ChatGPTService(OPEN_AI_TOKEN);
     private DialogMode currentMode = null;
